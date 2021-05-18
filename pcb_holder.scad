@@ -2,12 +2,16 @@ $fn=100;
 
 radius = 4;
 radius_hole = 2;
-
-
-main_size_x = 120;
-main_size_y = 75;
-main_size_z = 2;
 holder_r = 4;
+
+// add correction for big lengh
+dist_x = 111 - 1;
+dist_y = 111 - 2;
+
+// ramen grösse
+main_size_x = dist_x + (radius_hole + holder_r) * 2;
+main_size_y = dist_y + (radius_hole + holder_r) * 2;
+main_size_z = 2;
 holder_high = 10;
 
 bein_y = 18;
